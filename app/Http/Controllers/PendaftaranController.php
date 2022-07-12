@@ -102,6 +102,7 @@ class PendaftaranController extends Controller
                 'kode' => encrypt($santri->kode_santri)
             ]);
         } catch (\Throwable $th) {
+            dd($th);
             DB::rollBack();
             return responseMessage('error', $th->getMessage());
         }

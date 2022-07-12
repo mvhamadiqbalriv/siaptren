@@ -14,21 +14,21 @@ class OrangTuaWali extends Model
     protected $guarded = ['id'];
     public $timestamps = false;
 
-    protected function Nama(): Attribute
-    {
-        return Attribute::make(
-            get: fn ($value) => strtoupper($value),
-            set: fn ($value) => strtoupper($value)
-        );
-    }
+    // protected function Nama(): Attribute
+    // {
+    //     return Attribute::make(
+    //         get: fn ($value) => strtoupper($value),
+    //         set: fn ($value) => strtoupper($value)
+    //     );
+    // }
 
-    protected function Pekerjaan(): Attribute
-    {
-        return Attribute::make(
-            get: fn ($value) => strtoupper($value),
-            set: fn ($value) => strtoupper($value)
-        );
-    }
+    // protected function Pekerjaan(): Attribute
+    // {
+    //     return Attribute::make(
+    //         get: fn ($value) => strtoupper($value),
+    //         set: fn ($value) => strtoupper($value)
+    //     );
+    // }
 
     public function scopeStatus($query, $status)
     {
