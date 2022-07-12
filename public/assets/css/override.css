@@ -1,0 +1,53 @@
+/* datepicker */
+.form-control.datepicker{
+    padding: .45rem .9rem !important;
+}
+
+.datepicker>div{
+    display: block;
+}
+
+.datepicker-days table,
+.datepicker-months table,
+.datepicker-years table,
+.datepicker-decades table
+.datepicker-centuries table{
+    border-collapse: unset;
+}
+
+.datepicker td, .datepicker th{
+    width: 30px;
+    height: 30px;
+}
+
+/* Datatables */
+@media(max-width: 767px){
+  .dataTables_wrapper{
+    padding: 0;
+  }
+
+  .dataTables_wrapper .dataTables_length{
+    display: none !important;
+  }
+
+}
+
+table.dataTable{
+  width: 100% !important;
+}
+
+table.dataTable.collapsed tbody tr.odd td:first-child,
+table.dataTable.collapsed tbody tr.even td:first-child{
+  color: transparent !important;
+}
+
+table.dataTable.collapsed tbody tr.odd td:first-child::before,
+table.dataTable.collapsed tbody tr.even td:first-child::before{
+  position: relative !important;
+  font-family: inherit !important;
+  vertical-align: middle !important;
+  left: -5px !important;
+  width: 20px !important;
+  height: 20px !important;
+  line-height: 18px !important;
+}
